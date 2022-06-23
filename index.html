@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/tailwind.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1ca1444e32.js" crossorigin="anonymous"></script>
+  <title>Web Travel</title>
+</head>
+<body class="font-Montserrat dark:bg-gray-900 xl:flex xl:flex-col">
+  <nav class="w-full xl:w-11/12 2xl:w-10/12 lg h-16 hidden bg-white lg:flex p-4 justify-between xl:self-center dark:bg-gray-800">
+    <div class="h-auto w-auto">
+      <p class="text-lg text-principal dark:text-white font-black">Web Travel</p>
+    </div>
+    <div class="flex space-x-8 text-principal dark:text-white">
+      <a class="font-bold text-base" href="#home">Inicio</a>
+      <a class="font-bold text-base" href="#recomendadas">Recomendados</a>
+      <a class="font-bold text-base" href="#destacadas">Rentas</a>
+      <a class="font-bold text-base" href="#faqs">FAQS</a>
+      <a class="font-bold text-base" href="#footer">Nosotros</a>
+    </div>
+    <div class="flex space-x-8 text-principal order-last">
+      <i class="fa-solid fa-magnifying-glass text-xl text-principal dark:text-white"></i>
+      <button id="botonlg">
+        <i class="fa-solid fa-moon text-xl text-principal dark:text-white"></i>
+      </button>
+      <i class="fa-solid fa-user text-xl text-gray-300"></i>
+    </div>
+    <div></div>
+  </nav>
+  <section class="h-auto xl:w-11/12 2xl:w-10/12 xl:flex xl:flex-col xl:self-center">
+    <div id="home">
+        <div class="w-full h-[34rem] lg:h-[32rem] bg-sanFranciscoDesktop bg-cover bg-center">
+          <!-- <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt=""> -->
+          <div class="w-full lg:w-auto h-auto flex flex-col absolute space-y-80 items-center lg:space-y-0 lg:items-start lg:pt-36">
+            <input class="mt-10 px-6 py-3 rounded-full shadow-lg w-10/12 lg:hidden" placeholder="San Francisco" type="search" name="" id="">
+            
+            <div class="hidden lg:visible w-4/5 lg:flex pb-6">
+                <p class="text-4xl ml-16 font-extrabold ">Encuentra más ubicaciones como esta</p>
+            </div>
+            <button class="text-principal dark:text-white dark:bg-principal bg-white font-semibold p-3 rounded-full w-48 transition-all duration-500 ease-in-out hover:bg-principal hover:text-white
+            transform hover:-translate-y-1 hover:scale-110  lg:ml-16">
+              Explorar más
+            </button>
+          </div>
+        </div>
+      
+    </div>
+    <div id="recomendadas" class="p-6">
+      <p class=" text-2xl font-semibold text-principal dark:text-white">Recomendados</p>
+      <div class="w-auto h-72 items-center mt-6 flex space-x-6 overflow-x-auto overscroll-contain 2xl:justify-center">
+        <div class="card">
+          <div class="card-image bg-norway"></div>
+          <div class="bg-secondary dark:bg-gray-700 w-full h-2/5 rounded-b-lg">
+            <p class="card-title text-white">Norway</p>
+            <p class="card-description text-white">Lorem ipsum dolor sit, amet consectetur.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image bg-new_york "></div>
+          <div class="bg-white dark:bg-gray-800 w-full h-2/5 rounded-b-lg">
+            <p class="card-title text-tertiary ">New York</p>
+            <p class="card-description text-tertiary ">Lorem ipsum dolor sit, amet consectetur.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image bg-yosemite"></div>
+          <div class="bg-secondary dark:bg-gray-700 w-full h-2/5 rounded-b-lg">
+            <p class="card-title text-white">Yosemite</p>
+            <p class="card-description text-white">Lorem ipsum dolor sit, amet consectetur.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image bg-seattle "></div>
+          <div class="bg-white dark:bg-gray-800 w-full h-2/5 rounded-b-lg">
+            <p class="card-title text-tertiary">Seattle</p>
+            <p class="card-description text-tertiary">Lorem ipsum dolor sit, amet consectetur.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image bg-switzerland"></div>
+          <div class="bg-secondary dark:bg-gray-700 w-full h-2/5 rounded-b-lg">
+            <p class="card-title text-white">Suiza</p>
+            <p class="card-description text-white">Lorem ipsum dolor sit, amet consectetur.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image bg-iceland"></div>
+          <div class="bg-white dark:bg-gray-800 w-full h-2/5 rounded-b-lg">
+            <p class="card-title text-tertiary">Iceland</p>
+            <p class="card-description text-tertiary">Lorem ipsum dolor sit, amet consectetur.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="px-6 h-auto w-full" id="destacadas">
+      <p class="text-2xl font-semibold text-principal dark:text-white">Rentas destacadas</p>
+      <div class="mt-6 w-full h-full flex flex-col space-y-4 items-center">
+        <div class="w-full h-96 bg-chicago bg-cover rounded-xl lg:text-right lg:bg-center lg:pt-12">
+          <p class="destacada-title">Chicago</p>
+          <p class="text-base pl-8 text-white lg:font-bold pr-8 lg:text-lg">2 habitaciones, 1 baño y cocina</p>
+        </div>
+        <div class="w-full h-full grid grid-cols-1 md:grid-cols-5 md:grid-rows-2 md:place-items-center md:place-content-stretch gap-6">
+          <div class="w-full h-96 bg-LA bg-cover rounded-xl md:row-span-1 md:col-span-2 lg:row-span-2 lg:col-span-2 lg:h-[50rem] lg:text-right lg:bg-center lg:pt-12">
+            <p class="destacada-title">Los Angeles</p>
+            <p class="text-base pl-8 text-white lg:font-bold pr-8 lg:text-lg">2 habitaciones, 1 baño, cocina, minibar y piscina</p>
+          </div>
+          <div class="w-full h-96 bg-miami bg-cover rounded-xl md:row-span-1 md:col-span-3 lg:row-span-1 lg:col-span-3 lg:text-right lg:bg-center lg:pt-12">
+            <p class="destacada-title">Miami</p>
+            <p class="text-base pl-8 text-white lg:font-bold pr-8 lg:text-lg">2 habitaciones, 1 baño, cocina, minibar y piscina</p>
+          </div>
+          <div class="w-full h-96 bg-bali bg-cover rounded-xl md:row-span-1 md:col-span-5 lg:row-span-1 lg:col-span-3 lg:text-right lg:bg-center lg:pt-12">
+            <p class="destacada-title">Bali</p>
+            <p class="text-base pl-8 text-white lg:font-bold pr-8 lg:text-lg">2 habitaciones, 1 baño, cocina y piscina</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="px-6 w-full h-auto pb-14" id="faqs">
+      <p class="text-2xl text-principal font-semibold mt-8 mb-2 dark:text-white">FAQS</p>
+      <div class="w-full h-auto flex flex-col space-y-4">
+        <div>
+          <p class="text-xl font-medium text-principal dark:text-white">Política de cancelación</p>
+          <p class="text-sm pt-2 dark:text-white">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione neque eos saepe molestiae voluptate repudiandae odit doloremque ab culpa, magni aperiam, eius iure illum aut dolorem itaque quas corrupti. Suscipit.
+          </p>
+        </div>
+        <div>
+          <p class="text-xl font-medium text-principa dark:text-white">Metodos de pago</p>
+          <p class="text-sm pt-2 dark:text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quaerat? Est reprehenderit, consequuntur quasi odit earum officiis et quaerat aliquid aliquam nobis, tempora necessitatibus, iusto dolores debitis quas consequatur inventore?
+          </p>
+        </div>
+        <div>
+          <p class="text-xl font-medium text-principal dark:text-white">Mascotas</p>
+          <p class="text-sm pt-2 dark:text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fuga adipisci magnam nihil explicabo reiciendis fugit blanditiis, cupiditate saepe expedita? Suscipit omnis alias facilis, libero voluptatum explicabo quaerat cum accusamus?
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer" class="w-full h-auto p-6 space-y-3 pb-16 xl:w-11/12 2xl:w-10/12 xl:flex xl:flex-col xl:self-center dark:bg-gray-700 ">
+    <hr class="mb-6 dark:hidden">
+    <p class="text-xl px-4 text-gray-400 font-bold">Acerca de </p>
+    <p class="text-sm px-4 text-gray-400 font-semibold">Inversionistas </p>
+    <p class="text-sm px-4 text-gray-400 font-semibold">Empleos </p>
+    <p class="text-sm px-4 text-gray-400 font-semibold">Terminos y condiciones </p>
+    <p class="text-sm px-4 text-gray-400 font-semibold">Web Travel, Inc. </p>
+  </footer>
+  <div id="tab_bar" class="w-full h-16 bg-white dark:bg-gray-800 fixed left-0 bottom-0 flex space-x-8 items-center justify-center lg:hidden ">
+    <a href="#home" class="">
+      <i class="fa-solid fa-house text-xl text-principal"></i>
+    </a>
+    <a href="#destacadas" class="">
+      <i class="fa-solid fa-magnifying-glass text-xl text-gray-300"></i>
+    </a>
+    <a href="#recomendadas">
+      <i class="fa-solid fa-heart text-xl text-gray-300"></i>
+    </a>
+    <button id="boton">
+        <i class="fa-solid fa-moon text-xl text-gray-300"></i>
+    </button>
+    <a href="">
+      <i class="fa-solid fa-user text-xl text-gray-300"></i>
+    </a>
+  </div>
+</body>
+<script>
+  const elemento = document.querySelector("html");
+  const boton = document.querySelector("#boton")
+  const botonLg = document.querySelector("#botonlg")
+
+  boton.addEventListener("click", () => darkmode() )
+  botonLg.addEventListener("click", () => darkmode() )
+
+  const darkmode = () => {
+    elemento.classList.contains("dark") ? elemento.classList.remove("dark") : elemento.classList.add("dark")
+  }
+  
+</script>
+</html>
